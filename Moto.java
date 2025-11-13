@@ -17,15 +17,4 @@ public class Moto extends Veiculo {
         System.out.println("Ano: " + ano);
         System.out.println("Cilindradas: " + cilindradas);
     }
-    
-    // Sobrescreve os métodos para comportamento específico da Moto
-    @Override
-    public void ligar() {
-        System.out.println("Moto ligada - Motor 2 rodas ronronnando");
-    }
-    
-    @Override
-    public void acelerar() {
-        System.out.println("Moto acelerando rapidamente");
-    }
 }

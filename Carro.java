@@ -17,15 +17,4 @@ public class Carro extends Veiculo {
         System.out.println("Ano: " + ano);
         System.out.println("Número de Portas: " + numeroPortas);
     }
-    
-    // Sobrescreve os métodos para comportamento específico do Carro
-    @Override
-    public void ligar() {
-        System.out.println("Carro ligado - Motor 4 rodas em funcionamento");
-    }
-    
-    @Override
-    public void acelerar() {
-        System.out.println("Carro acelerando suavemente");
-    }
 }
