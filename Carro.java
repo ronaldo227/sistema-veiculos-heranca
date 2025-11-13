@@ -5,7 +5,7 @@ public class Carro extends Veiculo {
     
     // Construtor
     public Carro(String marca, String modelo, int ano, int numeroPortas) {
-        super(marca, modelo, ano); // Chama o construtor da classe pai
+        super(marca, modelo, ano); // Chama o construtor da superclasse Veiculo
         this.numeroPortas = numeroPortas;
     }
     
@@ -18,7 +18,7 @@ public class Carro extends Veiculo {
         System.out.println("Número de Portas: " + numeroPortas);
     }
     
-    // Sobrescreve os métodos da interface para comportamento específico do Carro
+    // Sobrescreve os métodos para comportamento específico do Carro
     @Override
     public void ligar() {
         System.out.println("Carro ligado - Motor 4 rodas em funcionamento");

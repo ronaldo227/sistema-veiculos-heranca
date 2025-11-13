@@ -1,5 +1,5 @@
 // Classe pai que representa um veículo genérico
-public class Veiculo implements Dirigivel {
+public class Veiculo {
     // Atributos protegidos para serem acessados pelas subclasses
     protected String marca;
     protected String modelo;
@@ -19,18 +19,15 @@ public class Veiculo implements Dirigivel {
         System.out.println("Ano: " + ano);
     }
     
-    // Implementação dos métodos da interface Dirigivel
-    @Override
+    // Métodos comuns a todos os veículos
     public void ligar() {
         System.out.println("Veículo ligado");
     }
     
-    @Override
     public void desligar() {
         System.out.println("Veículo desligado");
     }
     
-    @Override
     public void acelerar() {
         System.out.println("Veículo acelerando");
     }

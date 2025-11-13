@@ -5,7 +5,7 @@ public class Moto extends Veiculo {
     
     // Construtor
     public Moto(String marca, String modelo, int ano, int cilindradas) {
-        super(marca, modelo, ano); // Chama o construtor da classe pai
+        super(marca, modelo, ano); // Chama o construtor da superclasse Veiculo
         this.cilindradas = cilindradas;
     }
     
@@ -18,7 +18,7 @@ public class Moto extends Veiculo {
         System.out.println("Cilindradas: " + cilindradas);
     }
     
-    // Sobrescreve os métodos da interface para comportamento específico da Moto
+    // Sobrescreve os métodos para comportamento específico da Moto
     @Override
     public void ligar() {
         System.out.println("Moto ligada - Motor 2 rodas ronronnando");
