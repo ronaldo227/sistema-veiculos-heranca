@@ -12,20 +12,7 @@ public class Moto extends Veiculo {
     // Sobrescreve o método exibirDetalhes para incluir as cilindradas
     @Override
     public void exibirDetalhes() {
-        System.out.println("Marca: " + marca);
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Ano: " + ano);
+        super.exibirDetalhes(); // Chama o método da classe pai
         System.out.println("Cilindradas: " + cilindradas);
-    }
-    
-    // Sobrescreve os métodos para comportamento específico da Moto
-    @Override
-    public void ligar() {
-        System.out.println("Moto ligada - Motor 2 rodas ronronnando");
-    }
-    
-    @Override
-    public void acelerar() {
-        System.out.println("Moto acelerando rapidamente");
     }
 }

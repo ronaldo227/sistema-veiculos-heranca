@@ -18,17 +18,4 @@ public class Veiculo {
         System.out.println("Modelo: " + modelo);
         System.out.println("Ano: " + ano);
     }
-    
-    // Métodos comuns a todos os veículos
-    public void ligar() {
-        System.out.println("Veículo ligado");
-    }
-    
-    public void desligar() {
-        System.out.println("Veículo desligado");
-    }
-    
-    public void acelerar() {
-        System.out.println("Veículo acelerando");
-    }
 }

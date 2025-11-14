@@ -12,20 +12,7 @@ public class Carro extends Veiculo {
     // Sobrescreve o método exibirDetalhes para incluir o número de portas
     @Override
     public void exibirDetalhes() {
-        System.out.println("Marca: " + marca);
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Ano: " + ano);
+        super.exibirDetalhes(); // Chama o método da classe pai
         System.out.println("Número de Portas: " + numeroPortas);
-    }
-    
-    // Sobrescreve os métodos para comportamento específico do Carro
-    @Override
-    public void ligar() {
-        System.out.println("Carro ligado - Motor 4 rodas em funcionamento");
-    }
-    
-    @Override
-    public void acelerar() {
-        System.out.println("Carro acelerando suavemente");
     }
 }
